@@ -5,6 +5,6 @@ const router = new Router();
 
 router
     .get("/", helloWorld)
-    .get("/fizzbuzz", calculateFizzBuzz);
+    .get("/fizzbuzz/:id", calculateFizzBuzz);
 
 export default router;
