@@ -4,10 +4,11 @@ export const helloWorld = ({ response }: { response: any }) => {
   };
 };
 
-export const calculateFizzBuzz = async ({ params, response }: { params: { id: string }, response: any }) => {
-    response.status = 200;
+export const calculateFizzBuzz = ({ params, response }: { params: { id: string }, response: any }) => {
+    const message = "";
+    const input = params.id;
+
     response.body = {
-        success: true,
-        data: "fizz"
+        message
     }
 }

@@ -18,3 +18,37 @@ Assume that the input will always be a number.
 ```bash
 deno run --allow-net server.ts
 ```
+
+### Testing endpoints
+
+Going to `127.0.0.1:8000/` should give you a 200 status with body:
+
+```json
+{
+    "message": "Hello World!"
+}
+```
+
+Going to `127.0.0.1:8000/fizzbuzz/9` should give you a 200 status with body:
+
+```json
+{
+    "message": "Fizz"
+}
+```
+
+Going to `127.0.0.1:8000/fizzbuzz/50` should give you a 200 status with body:
+
+```json
+{
+    "message": "Buzz"
+}
+```
+
+Going to `127.0.0.1:8000/fizzbuzz/90` should give you a 200 status with body:
+
+```json
+{
+    "message": "FizzBuzz"
+}
+```
