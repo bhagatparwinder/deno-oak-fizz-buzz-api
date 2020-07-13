@@ -9,6 +9,7 @@ Create an endpoint that takes a number.
 If the number is a multiple of 3, return "Fizz".
 If the number is a multiple of 5, return "Buzz".
 For number which is a multiple of both 3 and 5, return "FizzBuzz".
+If it is not any of these cases, return the original number.
 
 Assume that the input will always be a number.
 ```
